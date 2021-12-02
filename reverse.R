@@ -1,9 +1,9 @@
-a = as.integer(readline(prompt = "Enter Number: "))
+n = as.integer(readline(prompt = "Enter n:"))
 rev = 0
-x = a
+x = n
 while(x != 0)
 {
-	rev = rev*10 + (x%%10)
-	x = x%/%10
+	rev = (10*rev) + (x%%10)
+	x = x %/% 10
 }
-message("Reverse = ",rev)
+message("Reverse of ",n," is ",rev)
